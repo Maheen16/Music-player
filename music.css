@@ -1,0 +1,110 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+body {
+  font-size: 62%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-container {
+  width: 100vw;
+  height: 100vh;
+  background: cornsilk;
+  display: grid;
+  place-items: center;
+}
+
+.music-container {
+  height: 26rem;
+  width: 17rem;
+  background: white;
+  box-shadow: 0rem 0.3rem 0.8rem 0.2rem rgb(243, 142, 204);
+  border-radius: 3rem;
+  text-align: center;
+  padding: 1.4rem;
+}
+
+#music-name {
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-shadow: 0 0.2rem 0.8rem rgb(247, 146, 197);
+  letter-spacing: 3px;
+  font-family: monospace;
+  color: rgb(12, 0, 12);
+}
+#artist-name {
+  font-size: 1rem;
+  color: rgb(165, 162, 162);
+  font-family: monospace;
+  padding: 0.7rem 0;
+}
+
+.image-container {
+  width: 12rem;
+  height: 12rem;
+  margin: auto;
+}
+img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  background-size: cover;
+  box-shadow: 0.1rem 0.2rem 1rem 0.1rem rgb(247, 146, 197);
+  /* display: grid; */
+  /* place-items: center; */
+}
+.audioDiv{
+  display: flex;  
+  margin: 11px 0;
+}
+.audioDiv audio{
+  background-color: aliceblue;  
+}
+.icons {
+  /* width: 11rem; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  margin-top: 2rem;
+}
+.icons .fas {
+  font-size: 1.2rem;
+  width: 100%;
+  text-align: center;
+  filter: drop-shadow(0px 5px 5px #e66de6);
+  cursor: pointer;
+}
+#play {
+  height: 2.3rem;
+  width: 6rem;
+  background-color: black;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#prev:hover,
+#next:hover {
+  color: #e66de6;
+}
+#play:hover {
+  background-color: rgb(147, 150, 153);
+  color: black;
+}
+.anime{
+    animation: rotatePlayer 3s linear infinite;
+}
+@keyframes rotatePlayer{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+
+    }
+}
